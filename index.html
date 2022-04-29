@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.typekit.net/wbj1muj.css">
     <title>TECHNI-SOFT</title>
@@ -15,38 +18,35 @@
 
 <header class="header">
 
-    <nav>
 
-        <div class="menu-logo">
 
-        <div class="logo">
-            <img alt="TECHNI-SOFT" src="./assets/logos/techni-white-275x37.png" href="./portfolio.html">
-        </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logos/techni-white-275x37.png" alt="" >
+          </a>
 
-        <div class="menu">
-            <ul>
-                <li>
-                    <a class="font_white_menu">Home</a>
-                </li>
-            
-                <li>
-                    <a class="font_white_menu" href="./portfolio.html">Portfolio</a>
-                </li>
-            
-                <li>
-                    <a class="font_white_menu" href="./blog.html">blog</a>
-                </li>
 
-                <li>
-                    <a class="font_white_menu" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+
 
         </div>
-
     </nav>
 
+    
 </header>
 
 <main>
@@ -99,14 +99,87 @@
 
     </div>  
 
+
+
+    <div class="container container_home">
+
+        <div class="row">
+    
+            <div class="col-12 col-md-6">
+
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/images/OPT-codificAI.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/images/OPT-expedentIA.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/OPT-procurAI.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+
+                <div class="row">
+
+                <div class="col-12 col-md-4">
+
+      
+                 <a href="#" class="btn btn-primary">Go somewhere</a>
+           
+                      
+                </div>
+                <div class="col-12 col-md-4">
+
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+           
+                      
+                </div>
+                <div class="col-12 col-md-4">
+
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+           
+                      
+                </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <section class="separator"></section>
+
+
+
     <section class="section__opinion_flex">
 
         <div class="box__opinion_flex">
            <div> <img class="photo_leader" src="./assets/images/leader-xabi.webp" alt="xabi"> </div>
            <div class="content_box"> 
-               <a class="font-black-400">Xabi Uribe-Etxebarria</a> 
-               <a class="font-black-200">CEO of TECHNI-SOFT</a> 
-               <a class="font-black-200">MIT Technology Review TR35.</a>
+               <a class="font_black_400">Xabi Uribe-Etxebarria</a> 
+               <a class="font_black_200">CEO of TECHNI-SOFT</a> 
+               <a class="font_black_200">MIT Technology Review TR35.</a>
         
           </div>
             
@@ -115,9 +188,9 @@
         <div class="box__opinion_flex">
             <div> <img class="photo_leader" src="./assets/images/leader-joanna.webp" alt="joanna"></div>
             <div class="content_box"> 
-                <a class="font-black-400">Joanna Hoffman</a> 
-                <a class="font-black-200">Former marketing</a> 
-                <a class="font-black-200">NeXT and General Magic.</a>
+                <a class="font_black_400">Joanna Hoffman</a> 
+                <a class="font_black_200">Former marketing</a> 
+                <a class="font_black_200">NeXT and General Magic.</a>
          
            </div>
              
@@ -126,9 +199,9 @@
          <div class="box__opinion_flex">
             <div> <img class="photo_leader" src="./assets/images/leader-tom.webp" alt="tom"> </div>
             <div class="content_box"> 
-                <a class="font-black-400">Tom Gruber</a> 
-                <a class="font-black-200">Co-founder and former CTO of Siri.</a> 
-                <a class="font-black-200">NeXT and General Magic.</a>
+                <a class="font_black_400">Tom Gruber</a> 
+                <a class="font_black_200">Co-founder and former CTO of Siri.</a> 
+                <a class="font_black_200">NeXT and General Magic.</a>
          
            </div>
              
@@ -137,9 +210,9 @@
          <div class="box__opinion_flex">
             <div> <img class="photo_leader" src="./assets/images/leader-alex.webp" alt="alex"> </div>
             <div class="content_box"> 
-                <a class="font-black-400">Alex Cruz</a> 
-                <a class="font-black-200">Former Chairman</a> 
-                <a class="font-black-200">CEO of British Airways.</a>
+                <a class="font_black_400">Alex Cruz</a> 
+                <a class="font_black_200">Former Chairman</a> 
+                <a class="font_black_200">CEO of British Airways.</a>
          
            </div>
              
@@ -151,18 +224,18 @@
 
     <section class="section_tech">
         <div class="content_box_text">
-            <a class="font-black-400">Secure Multi-Party Computation</a> 
-            <a class="font-black-200">El Aprendizaje Federado es un paradigma de Machine Learning destinado al aprendizaje de modelos a partir de datos descentralizados, tales como datos ubicados en los smartphones de los usuarios, en hospitales o en bancos, y garantizando la privacidad de los datos. Esto se logra entrenando los modelos localmente en cada nodo (por ejemplo, en cada hospital, en cada banco o en cada smartphone), compartiendo únicamente los parámetros actualizados en en cada nodo, (sin compartir los datos del usuario) y agregándolos de manera segura para construir un mejor modelo global. El Aprendizaje Federado se puede combinar con la Privacidad Diferencial para garantizar un mayor grado de privacidad.</a> 
+            <a class="font_black_400">Secure Multi-Party Computation</a> 
+            <a class="font_black_200">El Aprendizaje Federado es un paradigma de Machine Learning destinado al aprendizaje de modelos a partir de datos descentralizados, tales como datos ubicados en los smartphones de los usuarios, en hospitales o en bancos, y garantizando la privacidad de los datos. Esto se logra entrenando los modelos localmente en cada nodo (por ejemplo, en cada hospital, en cada banco o en cada smartphone), compartiendo únicamente los parámetros actualizados en en cada nodo, (sin compartir los datos del usuario) y agregándolos de manera segura para construir un mejor modelo global.</a> 
  
         </div>
         <div class="content_box_text">
-            <a class="font-black-400">Secure Multi-Party Computation</a> 
-            <a class="font-black-200">La Privacidad Diferencial es la técnica estadística que garantiza que ningún agente malintencionado pueda rastrear información individual hasta la fuente de datos. En Sherpa.ai conseguimos este objetivo, inyectando ruido con mecanismos Laplacianos, Gaussianos o Exponenciales. Esto hace que la información personal sea imposible de rastrear, garantizando que ningún dato individual pueda ser sometido a 'ingeniería inversa' y manteniendo la efectividad y precisión del algoritmo de predicción.</a> 
+            <a class="font_black_400">Secure Multi-Party Computation</a> 
+            <a class="font_black_200">La Privacidad Diferencial es la técnica estadística que garantiza que ningún agente malintencionado pueda rastrear información individual hasta la fuente de datos. En Sherpa.ai conseguimos este objetivo, inyectando ruido con mecanismos Laplacianos, Gaussianos o Exponenciales. Esto hace que la información personal sea imposible de rastrear, garantizando que ningún dato individual pueda ser sometido a 'ingeniería inversa' y manteniendo la efectividad y precisión del algoritmo de predicción.</a> 
 
         </div>           
         <div class="content_box_text">
-            <a class="font-black-400">Secure Multi-Party Computation</a> 
-            <a class="font-black-200">Secure Multi-Party Computation (SMPC) es un protocolo criptográfico que distribuye el cálculo de datos de diferentes fuentes para garantizar que nadie pueda ver la información de los demás y sin necesidad de confiar en un tercero.</a> 
+            <a class="font_black_400">Secure Multi-Party Computation</a> 
+            <a class="font_black_200">Secure Multi-Party Computation (SMPC) es un protocolo criptográfico que distribuye el cálculo de datos de diferentes fuentes para garantizar que nadie pueda ver la información de los demás y sin necesidad de confiar en un tercero.</a> 
         </div>
     </section>
 
@@ -172,22 +245,24 @@
         <div class="box__news_flex">
             <img class="img__news_flex" src="./assets/images/OPT-claims.png"  alt="claims">
             <a class="font-white-bold">CLAIMS -</a>
-            <a class="font-black-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
-            <div class="button" ><a href="./claims.html">Ver mas...</a></div>
+            <a class="font_black_200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
+            <a class="btn btn-outline-dark" href="./claims.html" role="button">Ver mas...</a>
         </div>
 
         <div class="box__news_flex">
             <img class="img__news_flex" src="./assets/images/OPT-codificAI.png"  alt="codificAI">
             <a class="font-white-bold">CODIFICAI -</a>
-            <a class="font-black-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
-            <div class="button"><a href="./codificai.html">Ver mas...</a></div>
+            <a class="font_black_200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
+            <a class="btn btn-outline-dark" href="./codificai.html" role="button">Ver mas...</a>
+ 
         </div>
 
         <div class="box__news_flex">
             <img class="img__news_flex" src="./assets/images/OPT-pAIments.png"  alt="pAIments">
             <a class="font-white-bold">PAIMENTS -</a>
-            <a class="font-black-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
-            <div class="button"><a href="./paiments.html">Ver mas...</a></div>
+            <a class="font_black_200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, pariatur?</a>
+ 
+            <a class="btn btn-outline-dark" href="./paiments.html" role="button">Ver mas...</a>
         </div>
 
     </section>    
@@ -212,6 +287,6 @@
 </main>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
