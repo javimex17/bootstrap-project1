@@ -382,7 +382,20 @@ a {
 
 }
 
+.container_tech {
+    margin-left: 90px !important;
+    margin-right: 90px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+    width: 100% !important;
+    max-width: 1800px !important;
+
+}
+
+.card_home {
+    min-height: 200px !important;
+}
 
 .section_tech .content_box_text {
     padding: 20px;
