@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $color_black;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo { 
+    padding-top: 18px;
+    width: 180px; 
+    height: 32px; 
+    margin: 10px; 
+    float: left; 
+}
+
+.menu {
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    float: right;
+
+    ul li {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style-type: none;
+        display: inline-block;
+
+    }
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+}
+
+
+.nav-item > a:hover {
+    color: $color_aquaBlue;
+  }
+
+  .nav-link{
+
+    color: $color_white;
+  
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: $color_black;
+    background-color: $color_white;
+}
+
+.menu-logo {
+    background-color: $color_black;
+    width: 100%; 
+    height: 120px;
+
+}
+
+.background {
+
+    background-image: url('../assets/images/background-TS.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-end;
+    margin-right: 0px;
+
+    .logo-tech {
+        padding: 8px;
+        margin: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    .logo-tech .image_tech {
+        width: 50px;
+    }
+
+}

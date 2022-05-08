@@ -1,0 +1,54 @@
+.contact {
+
+    padding: 100px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+
+    .table-contact {
+        background-color: $color_white;
+        width: 600px;
+        height: 400px;
+    }
+
+    .form{
+        background-color: $color_white;
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 40px;
+    }
+    
+    .form .comp-form {
+        width: 300px;
+        padding: 10px;
+    
+    }
+    
+
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: $color_green;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

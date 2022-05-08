@@ -1,0 +1,48 @@
+@media (min-width: 600px) {
+
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "brands                 brands"
+            "sidebar                content__bar"
+            "section__opinion_flex  section__opinion_flex";
+    }
+
+
+    .menu-logo {
+        height: 100px;
+    }
+
+    .brands .box__brands {
+        height: 40px;
+    }
+
+    .section_tech .content_box_text {
+        width: 400px;
+        height: 300px;
+    }
+
+    .section__opinion_flex .box__opinion_flex{
+        height: 100px;
+    }
+
+    .section__news_flex .box__news_flex .img__news_flex{
+        width: 90%;
+    }
+
+    .image__config{
+        width: 680px;
+    
+    }
+
+    .contact .form {
+        margin-bottom: 0px;
+    }
+
+    .contact .form .comp-form {
+        width: 400px;
+        padding: 10px;
+    
+    }
+
+}

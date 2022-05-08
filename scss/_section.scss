@@ -1,0 +1,245 @@
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+
+      "brands"
+      "sidebar"
+      "content__bar"
+      "section__opinion_flex";
+  }
+
+.brands{
+    grid-area: brands;
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;    
+    background-color: $color_blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;      
+    
+    .box__brands {
+        margin-left: 100px;
+        width: 230px;
+        height: 100px;
+    }
+    
+}
+
+.sidebar {
+    margin-top: 50px;
+    grid-area: sidebar;
+
+    height: 200px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content__bar {
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    grid-area: content__bar;
+    height: 200px;  
+    margin-right: 50px;
+}
+
+.section__opinion_flex {
+    grid-area: section__opinion_flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+
+    .box__opinion_flex{
+        margin-top: 40px;
+        background-color: #dcdcdc;
+        display: flex;
+        flex-direction: row;
+
+        &:hover{
+            box-shadow: 6px 6px #ccc;
+        }
+    }
+
+
+    .photo_leader {
+        height: 80px;
+        padding: 5px;
+    }
+
+}
+
+.content_box {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+
+.section_tech {
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color_white;
+
+    .content_box_text {
+        padding: 20px;
+        height: 550px;
+        width: 400px;
+        margin-top:20px;
+        background-color: $color_grayMedium;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        &:hover{
+            box-shadow: 6px 6px $color_grayBlock;
+        }
+    }
+}
+
+.section__news_flex {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left:50px;
+    padding-right: 50px;
+
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color_white;
+    flex-wrap: wrap;
+
+    .box__news_flex {
+        width: 400px; 
+        padding: 20px;
+        margin-top:20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $color_grayMedium;
+        &:hover{
+            box-shadow: 6px 6px $color_grayBlock;
+        }
+
+
+    }
+}
+
+.img__news_flex{
+    width: 70%;
+}
+
+
+.container_home {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    width: 100% !important;
+    max-width: 1800px !important;
+
+}
+
+.container_tech {
+    margin-left: 90px !important;
+    margin-right: 90px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    width: 100% !important;
+    max-width: 1800px !important;
+
+}
+
+.card_home {
+    min-height: 200px !important;
+}
+
+
+.section__text_flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color_white;
+    .box__text_flex {
+        height: 100px;
+    }
+}
+
+.section-blog {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.box__blog {
+    width: 670px; 
+
+    padding-right: 120px;
+    padding-left: 40px;
+}
+
+.section-image-center {
+    margin: 50px;
+    overflow: hidden;
+
+}
+
+.news-image-center {
+    position: relative;
+    left: 33%;
+}
+
+.blog-text-center {
+    padding-top:20px;
+    margin: 0px;
+
+    height: 250px;
+}
