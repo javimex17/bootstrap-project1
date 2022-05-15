@@ -148,22 +148,37 @@
     background-color: $color_white;
     flex-wrap: wrap;
 
-    .box__news_flex {
-        width: 400px; 
-        padding: 20px;
-        margin-top:20px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: $color_grayMedium;
-        &:hover{
-            box-shadow: 6px 6px $color_grayBlock;
-        }
 
-
-    }
 }
+
+@mixin box--news-flex ($fondo) {
+    width: 400px; 
+    padding: 20px;
+    margin-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $fondo;
+    &:hover{
+        box-shadow: 6px 6px $color_grayBlock;
+    }
+
+
+}
+
+.box--news-flex-100 { @include box--news-flex ( $gray100 ) }
+.box--news-flex-200 { @include box--news-flex ( $gray200 ) }
+.box--news-flex-300 { @include box--news-flex ( $gray300 ) }
+.box--news-flex-400 { @include box--news-flex ( $gray400 ) }
+.box--news-flex-500 { @include box--news-flex ( $gray500 ) }
+.box--news-flex-600 { @include box--news-flex ( $gray600 ) }
+.box--news-flex-700 { @include box--news-flex ( $gray700 ) }
+.box--news-flex-800 { @include box--news-flex ( $gray800 ) }
+.box--news-flex-900 { @include box--news-flex ( $gray900 ) }
+
+
+
 
 .img__news_flex{
     width: 70%;
@@ -241,6 +256,5 @@
 .blog-text-center {
     padding-top:20px;
     margin: 0px;
-
     height: 250px;
 }

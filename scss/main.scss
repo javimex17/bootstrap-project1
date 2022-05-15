@@ -12,8 +12,6 @@ $color_grayBlock: #ccc;
 $color_white : white;
 $color_green : #04AA6D;
 
-
-
 @if $type == blue 
 {
     $color_black: #0f2aae;
@@ -52,6 +50,19 @@ $breakpoints: (
   lg: 992px,
   xl: 1200px
 );
+
+
+
+      $gray100: #EEF1F4;
+      $gray200: #DFE3E7;
+      $gray300: #CBCFD2;
+      $gray400: #B3B6B9;
+      $gray500: #9CA0A3;
+      $gray600: #7C7F82;
+      $gray700: #606365;
+      $gray800: #4A4C4F;
+      $gray900: #333536;
+
 
 @mixin breakpoint($size) {
     @if map-has-key($breakpoints, $size) {
