@@ -1,4 +1,8 @@
 
+
+$type : black;
+
+
 $color_black: black;
 $color_blue: #99A5DF;
 $color_aquaBlue: #00bfff;
@@ -9,9 +13,60 @@ $color_white : white;
 $color_green : #04AA6D;
 
 
+
+@if $type == blue 
+{
+    $color_black: #0f2aae;
+    $color_blue: #0f2aae;
+    $color_aquaBlue: #2397be;
+    $color_gray : #474444;
+    $color_grayMedium: #5e5c5c;
+    $color_grayBlock: rgb(166, 137, 137);
+    $color_white : rgb(170, 165, 165);
+    $color_green : #7ea899;
+}
+
+@if $type == black 
+{
+    $color_black: black;
+    $color_blue: #99A5DF;
+    $color_aquaBlue: #00bfff;
+    $color_gray : #dddddd;
+    $color_grayMedium: #dcdcdc;
+    $color_grayBlock: #ccc;
+    $color_white : white;
+    $color_green : #04AA6D;
+}
+
+$size_box_brands: 100px;
+$size_opinion_desktop: 100px;
+$size_box_textHeight: 550px;
+$size_box_textWidth: 400px;
+
+$size_max_window: 1600px;
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+      @media (min-width: #{map-get($breakpoints, $size)}) {
+              @content;
+          }
+      }
+  }
+
+
+
 @import "commonObject";
 @import "contact";
 @import "fonts";
 @import "menuHeader";
 @import "section";
+@import "social";
 @import "media";

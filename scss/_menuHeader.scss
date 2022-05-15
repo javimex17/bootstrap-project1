@@ -83,6 +83,20 @@ a {
 
     }
 
+    .movil-tech {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1600px;
+
+        padding: 8px;
+        margin: 20px;
+        margin-bottom: 100px;
+
+    }    
+
     .logo-tech .image_tech {
         width: 50px;
     }

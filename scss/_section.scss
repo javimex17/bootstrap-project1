@@ -25,7 +25,7 @@
     .box__brands {
         margin-left: 100px;
         width: 230px;
-        height: 100px;
+        height: $size_box_brands;
     }
     
 }
@@ -116,8 +116,8 @@
 
     .content_box_text {
         padding: 20px;
-        height: 550px;
-        width: 400px;
+        height: $size_box_textHeight+250;
+        width: $size_box_textWidth;
         margin-top:20px;
         background-color: $color_grayMedium;
         display: flex;
@@ -129,6 +129,7 @@
         }
     }
 }
+
 
 .section__news_flex {
 
@@ -176,7 +177,7 @@
     padding-bottom: 50px;
 
     width: 100% !important;
-    max-width: 1800px !important;
+    max-width: $size_max_window !important;
 
 }
 
@@ -187,7 +188,7 @@
     padding-bottom: 50px;
 
     width: 100% !important;
-    max-width: 1800px !important;
+    max-width: $size_max_window !important;
 
 }
 

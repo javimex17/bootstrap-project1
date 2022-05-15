@@ -8,22 +8,27 @@
             "section__opinion_flex  section__opinion_flex";
     }
 
+    .movil-tech {
+        display:none;
+
+    }
+
 
     .menu-logo {
         height: 100px;
     }
 
     .brands .box__brands {
-        height: 40px;
+        height: ($size_box_brands)-60;
     }
 
     .section_tech .content_box_text {
-        width: 400px;
-        height: 300px;
+        width: $size_box_textWidth;
+        height: ($size_box_textHeight);
     }
 
     .section__opinion_flex .box__opinion_flex{
-        height: 100px;
+        height: $size_opinion_desktop;
     }
 
     .section__news_flex .box__news_flex .img__news_flex{
@@ -43,6 +48,13 @@
         width: 400px;
         padding: 10px;
     
+    }
+
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
     }
 
 }
