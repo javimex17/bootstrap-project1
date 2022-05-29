@@ -49,7 +49,7 @@ tr:nth-child(even) {
 
 .contact {
   padding: 100px;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -231,9 +231,14 @@ a {
   align-items: flex-start;
   align-content: flex-start; }
   .brands .box__brands {
-    margin-left: 100px;
     width: 230px;
-    height: 100px; }
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start; }
 
 .sidebar {
   margin-top: 50px;
@@ -246,7 +251,7 @@ a {
   justify-content: center; }
 
 .content__bar {
-  padding-left: 10px;
+  padding-left: 25px;
   margin-left: 10px;
   margin-top: 50px;
   grid-area: content__bar;
@@ -301,7 +306,7 @@ a {
   background-color: white; }
   .section_tech .content_box_text {
     padding: 20px;
-    height: 800px;
+    height: 550px;
     width: 400px;
     margin-top: 20px;
     background-color: #dcdcdc;
@@ -437,22 +442,17 @@ a {
   width: 70%; }
 
 .container_home {
-  margin-left: 50px !important;
-  margin-right: 50px !important;
-  padding-top: 50px;
-  padding-bottom: 50px;
   width: 100% !important;
   max-width: 1600px !important; }
 
 .container_tech {
-  margin-left: 90px !important;
-  margin-right: 90px !important;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100% !important;
   max-width: 1600px !important; }
 
 .card_home {
+  margin-top: 20px !important;
   min-height: 200px !important; }
 
 .section__text_flex {
@@ -475,21 +475,26 @@ a {
 
 .box__blog {
   width: 670px;
-  padding-right: 120px;
-  padding-left: 40px; }
+  padding-right: 20px; }
 
 .section-image-center {
-  margin: 50px;
-  overflow: hidden; }
+  padding: 20px; }
 
 .news-image-center {
-  position: relative;
-  left: 33%; }
+  width: 220px; }
 
 .blog-text-center {
   padding-top: 20px;
   margin: 0px;
-  height: 250px; }
+  height: 200px; }
+
+.blog-image-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start; }
 
 #footer {
   background: black !important; }
@@ -537,15 +542,19 @@ a {
   .wrapper {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "brands                 brands" "sidebar                content__bar" "section__opinion_flex  section__opinion_flex"; }
+  .news-image-center {
+    width: 320px; }
   .movil-tech {
     display: none; }
+  .card_home {
+    margin-top: 0px !important; }
   .menu-logo {
     height: 100px; }
   .brands .box__brands {
     height: 40px; }
   .section_tech .content_box_text {
     width: 400px;
-    height: 550px; }
+    height: 300px; }
   .section__opinion_flex .box__opinion_flex {
     height: 100px; }
   .section__news_flex .box__news_flex .img__news_flex {

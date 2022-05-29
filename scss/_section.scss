@@ -23,9 +23,17 @@
     align-content: flex-start;      
     
     .box__brands {
-        margin-left: 100px;
+ 
         width: 230px;
         height: $size_box_brands;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;   
+
     }
     
 }
@@ -44,7 +52,7 @@
 }
 
 .content__bar {
-    padding-left: 10px;
+    padding-left: 25px;
     margin-left: 10px;
     margin-top: 50px;
     grid-area: content__bar;
@@ -116,7 +124,7 @@
 
     .content_box_text {
         padding: 20px;
-        height: $size_box_textHeight+250;
+        height: $size_box_textHeight;
         width: $size_box_textWidth;
         margin-top:20px;
         background-color: $color_grayMedium;
@@ -183,28 +191,24 @@
 
 
 .container_home {
-    margin-left: 50px !important;
-    margin-right: 50px !important;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
     width: 100% !important;
     max-width: $size_max_window !important;
-
 }
 
 .container_tech {
-    margin-left: 90px !important;
-    margin-right: 90px !important;
+ //   margin-left: 90px !important;
+ //   margin-right: 90px !important;
     padding-top: 50px;
     padding-bottom: 50px;
 
     width: 100% !important;
     max-width: $size_max_window !important;
+
 
 }
 
 .card_home {
+    margin-top: 20px !important;
     min-height: 200px !important;
 }
 
@@ -224,34 +228,37 @@
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 0px;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .box__blog {
     width: 670px; 
 
-    padding-right: 120px;
-    padding-left: 40px;
+   padding-right: 20px;
 }
 
 .section-image-center {
-    margin: 50px;
-    overflow: hidden;
-
+    padding: 20px;
 }
 
 .news-image-center {
-    position: relative;
-    left: 33%;
+    width: 220px;
 }
 
 .blog-text-center {
     padding-top:20px;
     margin: 0px;
-    height: 250px;
+    height: 200px;
+}
+
+.blog-image-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;   
 }

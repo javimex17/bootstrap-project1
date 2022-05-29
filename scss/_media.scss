@@ -1,5 +1,8 @@
 @media (min-width: 600px) {
 
+
+    $size_box_textHeight: 300px;
+
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
@@ -8,12 +11,19 @@
             "section__opinion_flex  section__opinion_flex";
     }
 
+    .news-image-center {
+        width: 320px;
+    }
+    
+
     .movil-tech {
         display:none;
 
     }
 
-
+    .card_home {
+        margin-top:0px !important;
+    }
     .menu-logo {
         height: 100px;
     }
